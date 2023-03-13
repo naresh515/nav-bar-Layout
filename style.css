@@ -215,11 +215,11 @@ form {
 
     .close {
         font-size: 30px;
-        padding: 16px 30px 15px;
+        padding: 16px 10px 15px;
     }
 
     .heading {
-        padding: 10px;
+        padding: 10px 15px 10px 10px;
     }
 
     button.heading {
@@ -229,6 +229,11 @@ form {
     .panel1 {
         padding: 15px 20px;
         font-size: 12px;
+        font-weight: 100;
+    }
+
+    .section_text.visible {
+        width: 200px;
     }
 }
 
@@ -242,17 +247,26 @@ form {
     }
 
     .close {
-        font-size: 36px;
+        font-size: 30px;
         padding: 13px 30px;
     }
 
     button.heading {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .panel1 {
         padding: 15px 30px;
-        font-size: 15px;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    .heading {
+        padding: 15px 35px 15px 15px;
+    }
+
+    .section_text.visible {
+        width: 300px;
     }
 }
 
@@ -276,6 +290,11 @@ form {
         right: 0;
     }
 
+    .accordion-item.active-menu .caret {
+        transform: rotate(90deg);
+        transition: all .25s ease-in-out;
+    }
+
     .responsive {
         display: inline-block;
     }
@@ -284,15 +303,14 @@ form {
         width: 50%;
         margin: 0px;
         position: absolute;
-        top: 60px;
+        top: 0px;
         left: -500px;
         transition: all 0.4s linear;
     }
 
     .section_text.visible {
         left: 0px;
-        width: 60%;
-        top: 60px;
+        top: 0px;
         transition: all 0.4s linear;
         background-color: white;
         height: 100%;
@@ -314,7 +332,6 @@ form {
         align-items: flex-start;
         width: 100%;
         gap: 0;
-        box-shadow: 0 0 4px 0 rgb(51 51 51 / 48%);
     }
 
     .nav-overlay-panel {
@@ -343,6 +360,11 @@ form {
     button.heading {
         line-height: 2.3;
         color: black;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
     }
 
     button.heading:hover,
@@ -375,17 +397,17 @@ form {
     }
 
     .closebtn {
-        width: 60%;
+        width: 100%;
         display: none;
         background-color: white;
         font-size: 36px;
         cursor: pointer;
         text-align: end;
-        padding: 10px 0px;
-        position: fixed;
-        z-index: 1;
         transition: left 0.9s;
-        top: 0;
+        border: none;
+        outline: none;
+        padding: 10px 0px;
+        transition: all 0.4s linear;
     }
 
     .closebtn:hover {

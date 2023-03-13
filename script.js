@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $(".heading").click(function () {
         $(this).parent(".accordion-item").find(".panel").slideToggle();
+        $(this).parent(".accordion-item").toggleClass("active-menu");
         $(this).parent(".accordion-item").prevAll(".accordion-item").find(".panel").slideUp();
         $(this).parent(".accordion-item").nextAll(".accordion-item").find(".panel").slideUp();
     });
