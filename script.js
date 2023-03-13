@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $(".heading").click(function () {
-        $(this).parent(".accordion-item").find(".panel1").slideToggle();
-        $(this).parent(".accordion-item").prevAll(".accordion-item").find(".panel1").slideUp();
-        $(this).parent(".accordion-item").nextAll(".accordion-item").find(".panel1").slideUp();
+        $(this).parent(".accordion-item").find(".panel").slideToggle();
+        $(this).parent(".accordion-item").prevAll(".accordion-item").find(".panel").slideUp();
+        $(this).parent(".accordion-item").nextAll(".accordion-item").find(".panel").slideUp();
     });
 
     $('.toggle').click(function () {

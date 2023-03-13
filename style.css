@@ -228,7 +228,7 @@ form {
 
     .panel1 {
         padding: 15px 20px;
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
@@ -353,7 +353,7 @@ form {
     }
 
     .panel1 {
-        display: none;
+        display: flex;
         text-align: left;
         border-bottom: 1px solid lightgray;
     }
@@ -364,8 +364,7 @@ form {
     }
 
     .panel {
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
 
     .toggle,
